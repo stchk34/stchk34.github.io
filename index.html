@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<title>W3.CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Cafe-bar</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="food1.jpg" style="width:100%">
+  <img class="mySlides" src="food2.jpg" style="width:100%">
+  <img class="mySlides" src="food3.jpg" style="width:100%">
+</div>
+
+<div class="w3-container w3-center">
+  <h2> cafe "Merci"</h2>
+  <img src="kyivfood.jpg"  style="width:80%;max-width:320px">
+  <p>Завітавши до кафе “Merci”. Ви маєте можливість посмакувати крафтового пива ,відчути атмосферу вуличної їжі та джазу.Насолодіться панорамним краєвидом Львова та смачними стравами на свіжому повітрі. Це ідеальне місце для зустрічі з друзями.</p>
+</div>
+
+<div class="w3-container w3-center">
+  <h2>Our team</h2>
+  <img src="person.jpg" style="width:80%;max-width:320px">
+  <p>Наша команда- це основа всього.Без їхньої плідної роботи не було б самого закладу.Наші професіонали подолали тяжкий шлях, щоб зараз дати вам можливість посмакувати наші фірмові страви. </p>
+</div>
+   
+
+
+<h2>Lunch menu</h2>
+<p> На цьому тижні ви можете посмакувати такі страви </p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">бізнес-меню №1/ 125 гривень</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Салат зі свіжих овочів зі сметаною – Суп овочевий з броколі – Печінка  тушкована з грибами та картопляне пюре – Травяний напій – Десерт у подарунок</p>
+
+</div>
+
+
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">бізнес-ланч №2/ 160 гривень</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Салат овочевий з молодою капустою – Суп з фрикадельками – Риба морська смажена в яєчному клярі з рисом та кукурудзою – Напій з каркаде – Десерт у подарунок</p>
+</div>
+
+
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-black w3-left-align">бізнес-меню №1/ 125 гривень</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Салат зі свіжих овочів зі сметаною – Суп овочевий з броколі – Печінка  тушкована з грибами та картопляне пюре – Травяний напій – Десерт у подарунок</p>
+
+</div>
+
+
+
+<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-black w3-left-align">бізнес-ланч №2/ 160 гривень</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Салат овочевий з молодою капустою – Суп з фрикадельками – Риба морська смажена в яєчному клярі з рисом та кукурудзою – Напій з каркаде – Десерт у подарунок</p>
+</div>
+
+</div>
+
+
+<!-- другій акордион -->
+    
+<div class="w3-container">
+<h2>Our menu</h2>
+<p>Тут ви можете ознайомитись з нашими смаколиками</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">
+Основні страви та до пива</button>
+
+<div id="Demo1" class="w3-hide">
+  <a class="w3-button w3-block w3-black  w3-left-align" href="#"> Дорада на грилі 
+  - Курячі Сердечка з білими грибами та міні-деруни</a>
+  <a class="w3-button w3-block w3-black  w3-left-align" href="#"> Реберця за фірмовим рецептом 
+  -Ґзик телячий на грилі, банош та соус з блакитногг сиру</a>
+  <a class="w3-button w3-block w3-black  w3-left-align" href="#">Бутерброд з тюлькою
+   - Сирні смажені палички
+   - Курячі крильця
+   - Домашні ковбаски 
+   - Гостре в'ялене м'ясо </a>
+</div>
+
+</div>
+
+
+
+
+<div class="w3-container">
+  <h2>Our menu</h2>
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="vine.jpg" alt="Холодні закуски" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>ЗАКУСКА ДО ВИНА</p>
+    </div>
+  </div>
+
+
+ <div class="w3-card-4" style="width:50%">
+    <img src="vine.jpg" alt="Холодні закуски" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>ЗАКУСКА ДО ВИНА</p>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+  } else
+  { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+  }
+}
+</script>
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
 
