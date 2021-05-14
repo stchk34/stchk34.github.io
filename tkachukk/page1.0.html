@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>cafe-bar "OLDSKULL"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+
+<!-- навігація -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Головна сторінка</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Інформація про наш заклад</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Lunch menu</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Our team</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Our menu</a>    
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- слайд шоу:покращи якість фото-->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="old.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32  w3-hide-large">
+        
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="beer1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-large">
+ 
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="kiss.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-large">
+     
+    </div>
+  </div>
+  <script>
+   
+   // автоматичне сладшоу
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+    }
+}
+</script>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Паб "Oldskull"</h2>
+    <p class="w3-opacity"><i>Любите провести час в шумній компанії? Поспілкуватися за келихом пива? Обожнюєте класичний рок? Або ж ви хочете потрапити на live концерт,переглянути футбольну трансляцію? Тоді вам точно до нас.
+</i></p>
+    <p class="w3-justify">
+      Завітавши до пабу “Oldskull”.Насолодіться панорамним краєвидом Львова та смачними стравами на свіжому повітрі. Ми знаходимось в центрі міста. У нас Ви зможете відпочити в затишній атмосфері, насолодитися смаком крафтового пива і відчути всю барвистість смаку нашої кухні. Рок музика, смачне пиво, відмінне вино, коктейлі - і це ще не всі переваги Пабу Oldskull. </p>
+
+</div>
+<!-- добав ще фотки персонала -->  
+
+
+<div class="w3-container w3-center">
+  <h2>Our team</h2>
+  <img src="i7.jpg"style="width:80%;max-width:235px">
+  <img src="i.jpg" style="width:80%;max-width:200px">
+  <img src="i3.jpg" style="width:80%;max-width:210px">
+  <p class="w3-serif">Ну що, народ, хто не на роботі,підтягуйтесь в паб, вже можна))
+Так шо чекаємо, піпл. Свіже живе регіональне пиво чи місцевий ремісничий крафт? Вибір за вами. Але знайте: у нас є все. Шість кранів свіжака)Так що, приходьте </p>
+</div>
+  
+<!-- lists -->
+<div class="w3-container">
+  <h2>Lunch time</h2>
+  <p>На цьому тижні ви можете посмакувати такі страви </p>
+  <ul class="w3-ul w3-border">
+    <li><p class="w3-opacity">бізнес-ланч №1/ 125 гривень:
+    <p class="w3-justify">Салат зі свіжих овочів зі сметаною – Суп овочевий з броколі – Печінка  тушкована з грибами та картопляне пюре – Травяний напій – Десерт у подарунок</p></li>
+   <li><p class="w3-opacity">бізнес-ланч №2/ 160 гривень
+    <p class="w3-justify">Салат овочевий з молодою капустою – Суп з фрикадельками – Риба морська смажена в яєчному клярі з рисом та кукурудзою – Напій з каркаде – Десерт у подарунок</p></li>
+
+
+    <li><p class="w3-opacity">Основні страви: <p class="w3-justify"> Дорада на грилі - Курячі Сердечка з білими грибами та міні-деруни-Ґзик телячий на грилі, банош та соус з блакитногг сиру</p></li>
+
+    <li><p class="w3-opacity">Cтрави до пива: <p class="w3-justify"> Бутерброд з тюлькою
+   - Сирні смажені палички
+   - Курячі крильця
+   - Домашні ковбаски 
+   - Гостре в'ялене м'ясо</p></li>
+
+  </ul>
+</div>  
+
+<!-- foto gallery -->
+<style>
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+  <div class="w3-container">
+  <h2 class="w3-center">Our menu</h2>
+
+
+  <div class="w3-card-4" style="width:17%">
+    <img src="vine.jpg" alt="Холодні закуски" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="w3-serif">Закуска до вина</p>
+    </div>
+  </div>
+
+
+ <div class="w3-card-4" style="width:17%">
+    <img src="krychenuk.jpg" alt="Холодні закуски" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="w3-serif">Крученики із баклажанів</p>
+    </div>
+  </div>
+
+<div class="w3-card-4" style="width:17%">
+    <img src="met2.jpg" alt="Страви до пива" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="w3-serif">Гостре в'ялене м'ясо</p>
+    </div>
+  </div>
+
+
+<div class="w3-card-4" style="width:17%">
+    <img src="palochka.jpg" alt="Страви до пива" style="width:100%">
+    <div class="w3-container w3-center">
+      <p class="w3-serif">Сирні смажені палички</p>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- foto steak -->
+
+<div class="w3-container">
+ <h2 class="w3-center">STEAK</h2>
+  <p class="w3-serif"> <strong>Новинки:</strong> можна буде скуштувати вже цієї весни </p>
+
+<div class="gallery">
+  <a target="_blank" href="steuk3.jpg">
+    <img src="steuk3.jpg" width="600" height="400">
+  </a>
+   <div class="w3-container w3-center">
+   <div class="w3-serif">ТІ-БОУН СТЕЙК</div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+   <img src="steuk.jpg"  width="600" height="400">
+  </a>
+   <div class="w3-container w3-center">
+  <div class="w3-serif">СТЕЙК РІБАЙ</div> </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="steuk2.jpg">
+    <img src="steuk2.jpg"   width="600" height="400">
+  </a>  
+    <div class="w3-container w3-center">
+  <div class="w3-serif">СТРІПЛОЙН</div> </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+  
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<style>
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+</style>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p class="w3-medium"> <a href="https://www.instagram.com/pub_oldskull/" href="default.asp"  target="_blank"> our instagram </a></p>
+</footer>
+
+<script>
+
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
